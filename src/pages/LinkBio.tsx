@@ -29,11 +29,11 @@ export const LinkBio: React.FC<LinkBioProps> = ({ onNavigate }) => {
               {/* Avatar with Verified Badge */}
               <div className="relative w-28 h-28 sm:w-32 sm:h-32">
                 <img
-                  src="/images/generated-9.png"
+                  src={`${import.meta.env.BASE_URL}images/generated-9.png`}
                   alt="maabraidss"
                   className="w-full h-full object-cover rounded-[3px] shadow-soft"
                   onError={(e) => {
-                    (e.currentTarget as HTMLImageElement).src = '/images/generated-1.png';
+                    (e.currentTarget as HTMLImageElement).src = `${import.meta.env.BASE_URL}images/generated-1.png`;
                   }}
                 />
                 <div className="absolute -bottom-1 -right-1 w-8 h-8 bg-terracotta rounded-[3px] flex items-center justify-center text-creamlight text-sm font-bold shadow-soft">
@@ -272,7 +272,7 @@ export const LinkBio: React.FC<LinkBioProps> = ({ onNavigate }) => {
                   className="h-28 sm:h-36 rounded-[3px] overflow-hidden bg-sand/20 cursor-pointer group"
                 >
                   <img
-                    src="/images/generated-2.png"
+                    src={`${import.meta.env.BASE_URL}images/generated-2.png`}
                     alt="Destaque Box Braids"
                     className="w-full h-full object-cover transition-transform group-hover:scale-105"
                   />
@@ -282,7 +282,7 @@ export const LinkBio: React.FC<LinkBioProps> = ({ onNavigate }) => {
                   className="h-28 sm:h-36 rounded-[3px] overflow-hidden bg-sand/20 cursor-pointer group"
                 >
                   <img
-                    src="/images/generated-7.png"
+                    src={`${import.meta.env.BASE_URL}images/generated-7.png`}
                     alt="Destaque Torcional"
                     className="w-full h-full object-cover transition-transform group-hover:scale-105"
                   />
@@ -292,7 +292,7 @@ export const LinkBio: React.FC<LinkBioProps> = ({ onNavigate }) => {
                   className="h-28 sm:h-36 rounded-[3px] overflow-hidden bg-sand/20 cursor-pointer group"
                 >
                   <img
-                    src="/images/generated-4.png"
+                    src={`${import.meta.env.BASE_URL}images/generated-4.png`}
                     alt="Destaque Noivas"
                     className="w-full h-full object-cover transition-transform group-hover:scale-105"
                   />
