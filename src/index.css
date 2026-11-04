@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --espresso: #24160F;
+  --cream: #F1E5D7;
+  --sand: #DCC9B4;
+  --terracotta: #AD4E2A;
+  --honey: #E2A93F;
+  --clay: #C4713D;
+  --creamlight: #F6EFE4;
+}
+
+body {
+  margin: 0;
+  background-color: #24160F;
+  color: #F6EFE4;
+  font-family: 'Inter', system-ui, sans-serif;
+  overflow-x: hidden;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #24160F;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #3A2A20;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #AD4E2A;
+}
