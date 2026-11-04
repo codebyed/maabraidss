@@ -19,9 +19,6 @@ export const LinkBio: React.FC<LinkBioProps> = ({ onNavigate }) => {
           <div className="flex flex-col gap-8 sm:gap-10">
             {/* Brand Header */}
             <div className="flex items-center gap-2.5">
-              <div className="w-[36px] h-[22px] bg-creamlight rounded-[3px] flex items-center justify-center font-display text-[11px] text-espresso font-bold">
-                MB
-              </div>
               <span className="text-[15px] font-display uppercase tracking-wider text-creamlight">
                 maabraidss
               </span>

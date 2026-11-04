@@ -49,9 +49,7 @@ export const SobrePage: React.FC<SobrePageProps> = ({ onNavigate }) => {
 
             {/* Signature */}
             <div className="flex items-center gap-3.5 pt-3">
-              <div className="w-[40px] h-[20px] bg-clay rounded-[3px] flex items-center justify-center">
-                <span className="font-display text-[10px] text-creamlight">MB</span>
-              </div>
+
               <span className="text-[12px] text-creamlight font-sans font-semibold tracking-wider">
                 maabraidss · Trancista desde 2015
               </span>

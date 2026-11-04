@@ -111,9 +111,6 @@ export const AgendaPage: React.FC<AgendaPageProps> = ({ onNavigate }) => {
               className="flex items-center gap-2 cursor-pointer"
               onClick={() => onNavigate?.('bio')}
             >
-              <div className="w-[30px] h-[18px] bg-creamlight rounded-[2px] flex items-center justify-center font-display text-[9px] text-espresso font-bold">
-                MB
-              </div>
               <span className="text-xs font-display uppercase tracking-wider text-creamlight">
                 maabraidss
               </span>

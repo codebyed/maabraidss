@@ -28,13 +28,10 @@ export const Header: React.FC<HeaderProps> = ({ currentTab, onNavigate }) => {
         {/* Brand (clicks back to principal Link na Bio) */}
         <button
           onClick={() => handleItemClick('bio')}
-          className="flex flex-row items-center gap-2.5 sm:gap-3 text-left group focus:outline-none"
+          className="flex items-center text-left group focus:outline-none"
           title="Voltar à página principal (Link na Bio)"
         >
-          <div className="w-[36px] h-[24px] bg-creamlight rounded-[3px] flex items-center justify-center transition-transform group-hover:scale-105">
-            <span className="font-display text-[11px] text-espresso tracking-wider font-bold">MB</span>
-          </div>
-          <span className="text-[17px] text-creamlight font-display uppercase tracking-wider group-hover:text-honey transition-colors">
+          <span className="text-lg sm:text-xl text-creamlight font-display uppercase tracking-wider group-hover:text-honey transition-colors select-none">
             maabraidss
           </span>
         </button>
