@@ -25,7 +25,7 @@ export const TrabalhosPage: React.FC<TrabalhosPageProps> = () => {
       name: 'Aurora',
       category: 'Box Braids',
       meta: 'BOX BRAIDS · 2025',
-      image: '/images/generated-2.png',
+      image: `${import.meta.env.BASE_URL}images/generated-2.png`,
       filter: 'Box Braids',
     },
     {
@@ -33,7 +33,7 @@ export const TrabalhosPage: React.FC<TrabalhosPageProps> = () => {
       name: 'Raízes',
       category: 'Nagô',
       meta: 'NAGÔ · 2024',
-      image: '/images/generated-5.png',
+      image: `${import.meta.env.BASE_URL}images/generated-5.png`,
       filter: 'Nagô',
     },
     {
@@ -41,7 +41,7 @@ export const TrabalhosPage: React.FC<TrabalhosPageProps> = () => {
       name: 'Maré',
       category: 'Torcional',
       meta: 'TORCIONAL · 2025',
-      image: '/images/generated-7.png',
+      image: `${import.meta.env.BASE_URL}images/generated-7.png`,
       filter: 'Torcional',
     },
     {
@@ -49,7 +49,7 @@ export const TrabalhosPage: React.FC<TrabalhosPageProps> = () => {
       name: 'Semente',
       category: 'Infantil',
       meta: 'INFANTIL · 2024',
-      image: '/images/generated-6.png',
+      image: `${import.meta.env.BASE_URL}images/generated-6.png`,
       filter: 'Infantil',
     },
     {
@@ -57,7 +57,7 @@ export const TrabalhosPage: React.FC<TrabalhosPageProps> = () => {
       name: 'Terra',
       category: 'Noivas',
       meta: 'NOIVA · 2025',
-      image: '/images/generated-4.png',
+      image: `${import.meta.env.BASE_URL}images/generated-4.png`,
       filter: 'Noivas',
     },
     {
@@ -65,7 +65,7 @@ export const TrabalhosPage: React.FC<TrabalhosPageProps> = () => {
       name: 'Dueto',
       category: 'Box Braids',
       meta: 'CROCHET · 2024',
-      image: '/images/generated-3.png',
+      image: `${import.meta.env.BASE_URL}images/generated-3.png`,
       filter: 'Box Braids',
     },
   ];
