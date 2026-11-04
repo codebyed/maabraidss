@@ -59,7 +59,7 @@ export const SobrePage: React.FC<SobrePageProps> = ({ onNavigate }) => {
           {/* About Photo */}
           <div className="w-full lg:w-[470px] h-[480px] sm:h-[600px] shrink-0 rounded-[3px] overflow-hidden bg-sand/10 shadow-medium relative">
             <img
-              src="/images/generated-8.png"
+              src={`${import.meta.env.BASE_URL}images/generated-8.png`}
               alt="Núbia no Studio"
               className="w-full h-full object-cover object-center"
             />
