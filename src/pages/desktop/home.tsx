@@ -61,11 +61,11 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
           {/* Model Portrait */}
           <div className="relative z-10 w-full max-w-[566px] h-full flex items-center justify-center">
             <img
-              src="/images/generated-1.webp"
+              src={`${import.meta.env.BASE_URL}images/generated-1.webp`}
               alt="maabraidss Portfolio Portrait"
               className="w-full h-full object-contain object-bottom drop-shadow-md"
               onError={(e) => {
-                (e.currentTarget as HTMLImageElement).src = '/images/generated-1.png';
+                (e.currentTarget as HTMLImageElement).src = `${import.meta.env.BASE_URL}images/generated-1.png`;
               }}
             />
           </div>
