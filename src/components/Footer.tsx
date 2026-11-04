@@ -66,7 +66,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
               rel="noopener noreferrer"
               className="hover:text-terracotta transition-colors"
             >
-              @maabrainds
+              @maabraidss
             </a>
           </p>
         </div>
