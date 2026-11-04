@@ -69,12 +69,6 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
               }}
             />
           </div>
-
-          {/* Floating Aesthetic Tag */}
-          <div className="absolute bottom-4 left-4 sm:bottom-6 sm:left-6 z-20 flex items-center gap-2 px-3 py-1.5 bg-espresso/90 text-creamlight text-[10px] sm:text-[11px] font-sans font-semibold tracking-wider rounded-[3px] uppercase backdrop-blur-sm">
-            <span className="w-2 h-2 rounded-full bg-honey animate-pulse"></span>
-            <span>Edição 2025 · Maranhão MA</span>
-          </div>
         </div>
       </section>
 
