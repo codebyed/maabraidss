@@ -52,9 +52,9 @@ export const LinkBio: React.FC<LinkBioProps> = ({ onNavigate }) => {
               </div>
 
               {/* Status Pill */}
-              <div className="w-fit mx-auto lg:mx-0 flex items-center gap-2.5 px-3.5 py-2 bg-[#33241B] rounded-[3px] border border-line/40">
-                <span className="w-2 h-2 rounded-full bg-sage animate-pulse"></span>
-                <span className="text-[11px] text-sage-light font-semibold tracking-wider uppercase">
+              <div className="w-fit mx-auto lg:mx-0 flex items-center gap-2 sm:gap-2.5 px-2.5 sm:px-3.5 py-2 bg-[#33241B] rounded-[3px] border border-line/40">
+                <span className="w-2 h-2 shrink-0 rounded-full bg-sage animate-pulse"></span>
+                <span className="text-[9px] sm:text-[11px] text-sage-light font-semibold tracking-wider uppercase whitespace-nowrap">
                   Agenda aberta · Vagas limitadas no mês
                 </span>
               </div>
