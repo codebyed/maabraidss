@@ -5,7 +5,7 @@ export default function MobileTrabalhosPage() {
 
   const filters = ['all', 'web', 'mobile', 'branding'];
   const list = [
-    { id: 'web', title: 'Projeto Design SaaS', year: '2025', thumb: 'https://picsum.photos/seed/saas/200/120' },
+    { id: 'web', title: 'Projeto Design SaaS', year: '2026', thumb: 'https://picsum.photos/seed/saas/200/120' },
     { id: 'mobile', title: 'PWA Mobile App', year: '2024', thumb: '' },
     { id: 'web', title: 'Landing Page Conversão', year: '2024', thumb: '' },
     { id: 'branding', title: 'Brand Identity Nova', year: '2023', thumb: '' },

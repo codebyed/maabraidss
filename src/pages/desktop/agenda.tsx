@@ -24,7 +24,7 @@ export const AgendaPage: React.FC<AgendaPageProps> = ({ onNavigate }) => {
     price: 480,
   });
 
-  const [selectedDate, setSelectedDate] = useState<string>('2025-07-16');
+  const [selectedDate, setSelectedDate] = useState<string>('2026-07-16');
   const [selectedTime, setSelectedTime] = useState<string>('13:30');
 
   const [clientData, setClientData] = useState({
@@ -280,7 +280,7 @@ export const AgendaPage: React.FC<AgendaPageProps> = ({ onNavigate }) => {
                   <input
                     type="date"
                     value={selectedDate}
-                    min="2025-07-01"
+                    min="2026-07-01"
                     onChange={(e) => setSelectedDate(e.target.value)}
                     className="p-3.5 bg-white border border-[#D9C7B1] rounded-[3px] font-sans text-espresso text-sm outline-none focus:border-terracotta"
                   />

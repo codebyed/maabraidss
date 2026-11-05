@@ -24,7 +24,7 @@ export const TrabalhosPage: React.FC<TrabalhosPageProps> = () => {
       id: 'aurora',
       name: 'Aurora',
       category: 'Box Braids',
-      meta: 'BOX BRAIDS · 2025',
+      meta: 'BOX BRAIDS · 2026',
       image: `${import.meta.env.BASE_URL}images/generated-2.png`,
       filter: 'Box Braids',
     },
@@ -40,7 +40,7 @@ export const TrabalhosPage: React.FC<TrabalhosPageProps> = () => {
       id: 'mare',
       name: 'Maré',
       category: 'Torcional',
-      meta: 'TORCIONAL · 2025',
+      meta: 'TORCIONAL · 2026',
       image: `${import.meta.env.BASE_URL}images/generated-7.png`,
       filter: 'Torcional',
     },
@@ -56,7 +56,7 @@ export const TrabalhosPage: React.FC<TrabalhosPageProps> = () => {
       id: 'terra',
       name: 'Terra',
       category: 'Noivas',
-      meta: 'NOIVA · 2025',
+      meta: 'NOIVA · 2026',
       image: `${import.meta.env.BASE_URL}images/generated-4.png`,
       filter: 'Noivas',
     },
@@ -90,7 +90,7 @@ export const TrabalhosPage: React.FC<TrabalhosPageProps> = () => {
           {/* Lead & Filters */}
           <div className="w-full flex flex-col lg:flex-row justify-between items-start lg:items-end gap-6 pt-2 pb-6 border-b border-line/50">
             <p className="text-[14px] leading-[22px] text-latte font-sans font-medium max-w-[420px]">
-              Uma seleção de penteados criados no studio entre 2023 e 2025. Cada trança carrega uma
+              Uma seleção de penteados criados no studio entre 2023 e 2026. Cada trança carrega uma
               história, um tempo de cuidado e um desenho único.
             </p>
 
