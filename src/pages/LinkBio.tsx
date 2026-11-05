@@ -27,16 +27,16 @@ export const LinkBio: React.FC<LinkBioProps> = ({ onNavigate }) => {
             {/* Profile Block */}
             <div className="flex flex-col gap-5 sm:gap-6">
               {/* Avatar with Verified Badge */}
-              <div className="relative w-28 h-28 sm:w-32 sm:h-32">
+              <div className="relative w-28 h-28 sm:w-32 sm:h-32 mx-auto lg:mx-0">
                 <img
                   src={`${import.meta.env.BASE_URL}images/generated-9.png`}
                   alt="maabraidss"
-                  className="w-full h-full object-cover rounded-[3px] shadow-soft"
+                  className="w-full h-full object-cover rounded-full lg:rounded-[3px] shadow-soft"
                   onError={(e) => {
                     (e.currentTarget as HTMLImageElement).src = `${import.meta.env.BASE_URL}images/generated-1.png`;
                   }}
                 />
-                <div className="absolute -bottom-1 -right-1 w-8 h-8 bg-terracotta rounded-[3px] flex items-center justify-center text-creamlight text-sm font-bold shadow-soft">
+                <div className="absolute -bottom-1 -right-1 w-8 h-8 bg-terracotta rounded-full lg:rounded-[3px] flex items-center justify-center text-creamlight text-sm font-bold shadow-soft">
                   ✓
                 </div>
               </div>
