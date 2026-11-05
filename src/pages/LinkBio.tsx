@@ -212,16 +212,16 @@ export const LinkBio: React.FC<LinkBioProps> = ({ onNavigate }) => {
               onClick={() => onNavigate('agenda')}
               className="w-full p-5 sm:p-6 bg-terracotta hover:bg-[#c25830] text-creamlight rounded-[3px] flex items-center justify-between gap-4 transition-all hover:scale-[1.008] shadow-medium group text-left"
             >
-              <div className="flex items-center gap-4">
+              <div className="flex items-center gap-4 flex-1 min-w-0">
                 <div className="w-11 h-11 rounded-[3px] bg-white/10 flex items-center justify-center text-xl shrink-0">
                   📅
                 </div>
-                <div className="flex flex-col gap-0.5">
-                  <span className="text-lg sm:text-xl font-bold font-sans tracking-wide">
+                <div className="flex flex-col gap-0.5 min-w-0">
+                  <span className="text-lg sm:text-xl font-bold font-sans tracking-wide whitespace-nowrap">
                     Agendar horário
                   </span>
-                  <span className="text-xs text-[#F7D6C0] font-medium">
-                    Resposta no WhatsApp em até 24h · sinal de 30%
+                  <span className="text-[11px] sm:text-xs text-[#F7D6C0] font-medium truncate">
+                    Resposta em até 24h · sinal de 30%
                   </span>
                 </div>
               </div>
@@ -241,14 +241,14 @@ export const LinkBio: React.FC<LinkBioProps> = ({ onNavigate }) => {
                   ✂️
                 </div>
                 <div className="flex flex-col gap-0.5 flex-1 min-w-0">
-                  <span className="font-display text-xl uppercase tracking-tight text-creamlight group-hover:text-honey transition-colors">
+                  <span className="font-display text-lg sm:text-xl uppercase tracking-tight text-creamlight group-hover:text-honey transition-colors whitespace-nowrap">
                     Serviços &amp; Valores
                   </span>
-                  <span className="text-xs text-latte font-medium">
+                  <span className="text-[11px] sm:text-xs text-latte font-medium truncate">
                     6 técnicas · a partir de R$ 180
                   </span>
                 </div>
-                <span className="text-xs text-mocha group-hover:text-honey font-bold transition-colors shrink-0">
+                <span className="hidden sm:inline text-xs text-mocha group-hover:text-honey font-bold transition-colors shrink-0 whitespace-nowrap">
                   Ver tabela →
                 </span>
               </button>
@@ -262,14 +262,14 @@ export const LinkBio: React.FC<LinkBioProps> = ({ onNavigate }) => {
                   ✨
                 </div>
                 <div className="flex flex-col gap-0.5 flex-1 min-w-0">
-                  <span className="font-display text-xl uppercase tracking-tight text-creamlight group-hover:text-honey transition-colors">
+                  <span className="font-display text-lg sm:text-xl uppercase tracking-tight text-creamlight group-hover:text-honey transition-colors whitespace-nowrap">
                     Trabalhos &amp; Galeria
                   </span>
-                  <span className="text-xs text-latte font-medium">
+                  <span className="text-[11px] sm:text-xs text-latte font-medium truncate">
                     Fotos reais das clientes do studio
                   </span>
                 </div>
-                <span className="text-xs text-mocha group-hover:text-honey font-bold transition-colors shrink-0">
+                <span className="hidden sm:inline text-xs text-mocha group-hover:text-honey font-bold transition-colors shrink-0 whitespace-nowrap">
                   Galeria →
                 </span>
               </button>
@@ -285,14 +285,14 @@ export const LinkBio: React.FC<LinkBioProps> = ({ onNavigate }) => {
                   📍
                 </div>
                 <div className="flex flex-col gap-0.5 flex-1 min-w-0">
-                  <span className="font-display text-xl uppercase tracking-tight text-creamlight group-hover:text-honey transition-colors">
+                  <span className="font-display text-lg sm:text-xl uppercase tracking-tight text-creamlight group-hover:text-honey transition-colors whitespace-nowrap">
                     Como Chegar
                   </span>
-                  <span className="text-xs text-latte font-medium">
+                  <span className="text-[11px] sm:text-xs text-latte font-medium truncate">
                     Studio no Maranhão · MA
                   </span>
                 </div>
-                <span className="text-xs text-mocha group-hover:text-sand font-bold transition-colors shrink-0">
+                <span className="hidden sm:inline text-xs text-mocha group-hover:text-sand font-bold transition-colors shrink-0 whitespace-nowrap">
                   Abrir mapa ↗
                 </span>
               </a>
@@ -308,14 +308,14 @@ export const LinkBio: React.FC<LinkBioProps> = ({ onNavigate }) => {
                   💬
                 </div>
                 <div className="flex flex-col gap-0.5 flex-1 min-w-0">
-                  <span className="font-display text-xl uppercase tracking-tight text-creamlight group-hover:text-honey transition-colors">
+                  <span className="font-display text-lg sm:text-xl uppercase tracking-tight text-creamlight group-hover:text-honey transition-colors whitespace-nowrap">
                     WhatsApp Direto
                   </span>
-                  <span className="text-xs text-latte font-medium">
+                  <span className="text-[11px] sm:text-xs text-latte font-medium truncate">
                     (11) 98888-1234 · Dúvidas rápidas
                   </span>
                 </div>
-                <span className="text-xs text-mocha group-hover:text-whatsapp font-bold transition-colors shrink-0">
+                <span className="hidden sm:inline text-xs text-mocha group-hover:text-whatsapp font-bold transition-colors shrink-0 whitespace-nowrap">
                   Chamar ↗
                 </span>
               </a>
