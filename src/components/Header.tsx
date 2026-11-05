@@ -9,7 +9,7 @@ export const Header: React.FC<HeaderProps> = ({ currentTab, onNavigate }) => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const navItems = [
-    { id: 'bio', label: 'Início (Bio)' },
+    { id: 'bio', label: 'Início' },
     { id: 'home', label: 'Portfólio' },
     { id: 'trabalhos', label: 'Galeria' },
     { id: 'servicos', label: 'Serviços' },
