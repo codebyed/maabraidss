@@ -31,28 +31,28 @@ export const LinkBio: React.FC<LinkBioProps> = ({ onNavigate }) => {
                 <img
                   src={`${import.meta.env.BASE_URL}images/generated-9.png`}
                   alt="maabraidss"
-                  className="w-full h-full object-cover rounded-full lg:rounded-[3px] shadow-soft"
+                  className="w-full h-full object-cover rounded-full shadow-soft"
                   onError={(e) => {
                     (e.currentTarget as HTMLImageElement).src = `${import.meta.env.BASE_URL}images/generated-1.png`;
                   }}
                 />
-                <div className="absolute -bottom-1 -right-1 w-8 h-8 bg-terracotta rounded-full lg:rounded-[3px] flex items-center justify-center text-creamlight text-sm font-bold shadow-soft">
+                <div className="absolute -bottom-1 -right-1 w-8 h-8 bg-terracotta rounded-full flex items-center justify-center text-creamlight text-sm font-bold shadow-soft">
                   ✓
                 </div>
               </div>
 
               {/* Title & Tagline */}
-              <div className="flex flex-col gap-2">
+              <div className="flex flex-col items-center gap-2 text-center lg:items-start lg:text-left">
                 <h1 className="text-5xl sm:text-6xl xl:text-[76px] leading-[0.9] font-display uppercase tracking-tight text-creamlight select-none">
                   MAABRAIDSS
                 </h1>
-                <p className="text-[14px] leading-relaxed text-latte font-medium max-w-[380px] pt-1">
+                <p className="text-[14px] leading-relaxed text-latte font-medium max-w-[380px] pt-1 mx-auto lg:mx-0">
                   Trancista · box braids, nagô e torcional · Maranhão, MA
                 </p>
               </div>
 
               {/* Status Pill */}
-              <div className="w-fit flex items-center gap-2.5 px-3.5 py-2 bg-[#33241B] rounded-[3px] border border-line/40">
+              <div className="w-fit mx-auto lg:mx-0 flex items-center gap-2.5 px-3.5 py-2 bg-[#33241B] rounded-[3px] border border-line/40">
                 <span className="w-2 h-2 rounded-full bg-sage animate-pulse"></span>
                 <span className="text-[11px] text-sage-light font-semibold tracking-wider uppercase">
                   Agenda aberta · Vagas limitadas no mês
@@ -165,15 +165,12 @@ export const LinkBio: React.FC<LinkBioProps> = ({ onNavigate }) => {
               {/* Card 1: Serviços & Valores */}
               <button
                 onClick={() => onNavigate('servicos')}
-                className="p-5 bg-espresso hover:bg-[#2C1C14] text-creamlight rounded-[3px] flex flex-col justify-between gap-4 transition-all hover:scale-[1.01] text-left group shadow-soft"
+                className="p-5 bg-espresso hover:bg-[#2C1C14] text-creamlight rounded-[3px] flex items-center gap-4 transition-all hover:scale-[1.01] text-left group shadow-soft"
               >
-                <div className="flex justify-between items-start">
-                  <span className="text-lg">✂️</span>
-                  <span className="text-xs text-mocha group-hover:text-honey font-bold transition-colors">
-                    Ver tabela →
-                  </span>
+                <div className="w-11 h-11 shrink-0 rounded-[3px] bg-white/10 flex items-center justify-center text-lg">
+                  ✂️
                 </div>
-                <div className="flex flex-col">
+                <div className="flex flex-col gap-0.5 flex-1 min-w-0">
                   <span className="font-display text-xl uppercase tracking-tight text-creamlight group-hover:text-honey transition-colors">
                     Serviços &amp; Valores
                   </span>
@@ -181,20 +178,20 @@ export const LinkBio: React.FC<LinkBioProps> = ({ onNavigate }) => {
                     6 técnicas · a partir de R$ 180
                   </span>
                 </div>
+                <span className="text-xs text-mocha group-hover:text-honey font-bold transition-colors shrink-0">
+                  Ver tabela →
+                </span>
               </button>
 
               {/* Card 2: Trabalhos & Portfólio */}
               <button
                 onClick={() => onNavigate('trabalhos')}
-                className="p-5 bg-espresso hover:bg-[#2C1C14] text-creamlight rounded-[3px] flex flex-col justify-between gap-4 transition-all hover:scale-[1.01] text-left group shadow-soft"
+                className="p-5 bg-espresso hover:bg-[#2C1C14] text-creamlight rounded-[3px] flex items-center gap-4 transition-all hover:scale-[1.01] text-left group shadow-soft"
               >
-                <div className="flex justify-between items-start">
-                  <span className="text-lg">✨</span>
-                  <span className="text-xs text-mocha group-hover:text-honey font-bold transition-colors">
-                    Galeria →
-                  </span>
+                <div className="w-11 h-11 shrink-0 rounded-[3px] bg-white/10 flex items-center justify-center text-lg">
+                  ✨
                 </div>
-                <div className="flex flex-col">
+                <div className="flex flex-col gap-0.5 flex-1 min-w-0">
                   <span className="font-display text-xl uppercase tracking-tight text-creamlight group-hover:text-honey transition-colors">
                     Trabalhos &amp; Galeria
                   </span>
@@ -202,6 +199,9 @@ export const LinkBio: React.FC<LinkBioProps> = ({ onNavigate }) => {
                     Fotos reais das clientes do studio
                   </span>
                 </div>
+                <span className="text-xs text-mocha group-hover:text-honey font-bold transition-colors shrink-0">
+                  Galeria →
+                </span>
               </button>
 
               {/* Card 3: Como Chegar (Localização) */}
@@ -209,15 +209,12 @@ export const LinkBio: React.FC<LinkBioProps> = ({ onNavigate }) => {
                 href="https://maps.google.com/?q=Maranhão"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="p-5 bg-espresso hover:bg-[#2C1C14] text-creamlight rounded-[3px] flex flex-col justify-between gap-4 transition-all hover:scale-[1.01] text-left group shadow-soft"
+                className="p-5 bg-espresso hover:bg-[#2C1C14] text-creamlight rounded-[3px] flex items-center gap-4 transition-all hover:scale-[1.01] text-left group shadow-soft"
               >
-                <div className="flex justify-between items-start">
-                  <span className="text-lg">📍</span>
-                  <span className="text-xs text-mocha group-hover:text-sand font-bold transition-colors">
-                    Abrir mapa ↗
-                  </span>
+                <div className="w-11 h-11 shrink-0 rounded-[3px] bg-white/10 flex items-center justify-center text-lg">
+                  📍
                 </div>
-                <div className="flex flex-col">
+                <div className="flex flex-col gap-0.5 flex-1 min-w-0">
                   <span className="font-display text-xl uppercase tracking-tight text-creamlight group-hover:text-honey transition-colors">
                     Como Chegar
                   </span>
@@ -225,6 +222,9 @@ export const LinkBio: React.FC<LinkBioProps> = ({ onNavigate }) => {
                     Studio no Maranhão · MA
                   </span>
                 </div>
+                <span className="text-xs text-mocha group-hover:text-sand font-bold transition-colors shrink-0">
+                  Abrir mapa ↗
+                </span>
               </a>
 
               {/* Card 4: WhatsApp Direto */}
@@ -232,15 +232,12 @@ export const LinkBio: React.FC<LinkBioProps> = ({ onNavigate }) => {
                 href="https://wa.me/5511988881234?text=Olá Núbia! Vi seu link na bio e gostaria de conversar sobre tranças."
                 target="_blank"
                 rel="noopener noreferrer"
-                className="p-5 bg-espresso hover:bg-[#2C1C14] text-creamlight rounded-[3px] flex flex-col justify-between gap-4 transition-all hover:scale-[1.01] text-left group shadow-soft"
+                className="p-5 bg-espresso hover:bg-[#2C1C14] text-creamlight rounded-[3px] flex items-center gap-4 transition-all hover:scale-[1.01] text-left group shadow-soft"
               >
-                <div className="flex justify-between items-start">
-                  <span className="text-lg text-whatsapp">💬</span>
-                  <span className="text-xs text-mocha group-hover:text-whatsapp font-bold transition-colors">
-                    Chamar ↗
-                  </span>
+                <div className="w-11 h-11 shrink-0 rounded-[3px] bg-white/10 flex items-center justify-center text-lg">
+                  💬
                 </div>
-                <div className="flex flex-col">
+                <div className="flex flex-col gap-0.5 flex-1 min-w-0">
                   <span className="font-display text-xl uppercase tracking-tight text-creamlight group-hover:text-honey transition-colors">
                     WhatsApp Direto
                   </span>
@@ -248,6 +245,9 @@ export const LinkBio: React.FC<LinkBioProps> = ({ onNavigate }) => {
                     (11) 98888-1234 · Dúvidas rápidas
                   </span>
                 </div>
+                <span className="text-xs text-mocha group-hover:text-whatsapp font-bold transition-colors shrink-0">
+                  Chamar ↗
+                </span>
               </a>
             </div>
 
