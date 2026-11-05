@@ -52,8 +52,7 @@ export const LinkBio: React.FC<LinkBioProps> = ({ onNavigate }) => {
               </div>
 
               {/* Status Pill */}
-              <div className="w-fit mx-auto lg:mx-0 flex items-center gap-2 sm:gap-2.5 px-2.5 sm:px-3.5 py-2 bg-[#33241B] rounded-[3px] border border-line/40">
-                <span className="w-2 h-2 shrink-0 rounded-full bg-sage animate-pulse"></span>
+              <div className="w-fit mx-auto lg:mx-0 flex items-center px-2.5 sm:px-3.5 py-2 bg-[#33241B] rounded-[3px] border border-line/40">
                 <span className="text-[9px] sm:text-[11px] text-sage-light font-semibold tracking-wider uppercase whitespace-nowrap">
                   Agenda aberta · Vagas limitadas no mês
                 </span>
@@ -124,12 +123,6 @@ export const LinkBio: React.FC<LinkBioProps> = ({ onNavigate }) => {
               <span className="text-[11px] text-terracotta font-sans font-bold tracking-[0.14em] uppercase">
                 LINKS RÁPIDOS
               </span>
-              <div className="flex items-center gap-2 px-3 py-1 bg-[#DCE3C9] rounded-[3px]">
-                <span className="w-1.5 h-1.5 rounded-full bg-[#5F7448]"></span>
-                <span className="text-[10px] text-[#3F4F2E] font-bold tracking-wider uppercase">
-                  AGENDA ABERTA
-                </span>
-              </div>
             </div>
 
             {/* Title */}
