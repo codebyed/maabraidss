@@ -3,9 +3,10 @@ import React, { useState } from 'react';
 interface HeaderProps {
   currentTab: string;
   onNavigate: (tab: string) => void;
+  onBack: () => void;
 }
 
-export const Header: React.FC<HeaderProps> = ({ currentTab, onNavigate }) => {
+export const Header: React.FC<HeaderProps> = ({ currentTab, onNavigate, onBack }) => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const navItems = [
@@ -26,15 +27,29 @@ export const Header: React.FC<HeaderProps> = ({ currentTab, onNavigate }) => {
     <header className="w-full flex flex-col bg-espresso z-50 border-b border-line/40 sticky top-0 backdrop-blur-md bg-espresso/95">
       <div className="w-full flex flex-row justify-between items-center px-5 sm:px-8 md:px-14 py-4 md:py-6">
         {/* Brand (clicks back to principal Link na Bio) */}
-        <button
-          onClick={() => handleItemClick('bio')}
-          className="flex items-center text-left group focus:outline-none"
-          title="Voltar à página principal (Link na Bio)"
-        >
-          <span className="text-lg sm:text-xl text-creamlight font-display uppercase tracking-wider group-hover:text-honey transition-colors select-none">
-            maabraidss
-          </span>
-        </button>
+        <div className="flex items-center gap-3 sm:gap-4">
+          <button
+            onClick={onBack}
+            className="w-[38px] h-[38px] shrink-0 rounded-[3px] border border-line flex items-center justify-center text-creamlight hover:border-sand hover:text-honey focus:outline-none transition-colors"
+            aria-label="Voltar"
+            title="Voltar"
+          >
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="w-4 h-4">
+              <line x1="19" y1="12" x2="5" y2="12"></line>
+              <polyline points="12 19 5 12 12 5"></polyline>
+            </svg>
+          </button>
+
+          <button
+            onClick={() => handleItemClick('bio')}
+            className="flex items-center text-left group focus:outline-none"
+            title="Voltar à página principal (Link na Bio)"
+          >
+            <span className="text-lg sm:text-xl text-creamlight font-display uppercase tracking-wider group-hover:text-honey transition-colors select-none">
+              maabraidss
+            </span>
+          </button>
+        </div>
 
         {/* Desktop Nav (hidden on mobile) */}
         <nav className="hidden md:flex items-center gap-7 lg:gap-8">

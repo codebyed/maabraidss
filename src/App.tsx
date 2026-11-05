@@ -12,6 +12,7 @@ import { AgendaPage } from './pages/desktop/agenda';
 export function App() {
   // A página de Link na Bio é a página principal / inicial por padrão
   const [currentTab, setCurrentTab] = useState<string>('bio');
+  const [history, setHistory] = useState<string[]>([]);
 
   // Rola até o topo suavemente ao trocar de página
   useEffect(() => {
@@ -19,7 +20,18 @@ export function App() {
   }, [currentTab]);
 
   const handleNavigate = (tab: string) => {
+    if (tab === currentTab) return;
+    setHistory((prev) => [...prev, currentTab]);
     setCurrentTab(tab);
+  };
+
+  const handleBack = () => {
+    if (history.length === 0) {
+      setCurrentTab('bio');
+      return;
+    }
+    setCurrentTab(history[history.length - 1]);
+    setHistory(history.slice(0, -1));
   };
 
   return (
@@ -32,7 +44,7 @@ export function App() {
       ) : (
         <>
           {/* Header de navegação para as páginas secundárias */}
-          <Header currentTab={currentTab} onNavigate={handleNavigate} />
+          <Header currentTab={currentTab} onNavigate={handleNavigate} onBack={handleBack} />
 
           {/* Roteamento das páginas internas */}
           <main className="flex-1 w-full">
