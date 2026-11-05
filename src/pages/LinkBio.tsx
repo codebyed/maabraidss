@@ -146,18 +146,6 @@ export const LinkBio: React.FC<LinkBioProps> = ({ onNavigate }) => {
         {/* ============================================================== */}
         <div className="flex-1 bg-cream text-espresso p-6 sm:p-10 lg:p-14 flex flex-col justify-between gap-8">
           <div className="flex flex-col gap-6">
-            {/* Panel Head */}
-            <div className="w-full flex justify-between items-center">
-              <span className="text-[11px] text-terracotta font-sans font-bold tracking-[0.14em] uppercase">
-                LINKS RÁPIDOS
-              </span>
-            </div>
-
-            {/* Title */}
-            <h2 className="text-4xl sm:text-5xl lg:text-[58px] leading-[0.95] font-display uppercase tracking-tight text-espresso select-none">
-              TUDO NUM LUGAR SÓ
-            </h2>
-
             {/* Highlights Section */}
             <div className="flex flex-col gap-3">
               <div className="w-full flex justify-between items-center">
@@ -206,6 +194,18 @@ export const LinkBio: React.FC<LinkBioProps> = ({ onNavigate }) => {
                 </div>
               </div>
             </div>
+
+            {/* Panel Head */}
+            <div className="w-full flex justify-between items-center">
+              <span className="text-[11px] text-terracotta font-sans font-bold tracking-[0.14em] uppercase">
+                LINKS RÁPIDOS
+              </span>
+            </div>
+
+            {/* Title */}
+            <h2 className="text-4xl sm:text-5xl lg:text-[58px] leading-[0.95] font-display uppercase tracking-tight text-espresso select-none">
+              TUDO NUM LUGAR SÓ
+            </h2>
 
             {/* Featured Link 1: Agendar Horário (Big Terracotta Card) */}
             <button
