@@ -64,7 +64,7 @@ export const LinkBio: React.FC<LinkBioProps> = ({ onNavigate }) => {
           {/* Bottom of Profile Panel: Socials & URL */}
           <div className="flex flex-col gap-5 pt-8 lg:pt-10">
             {/* Social Icons */}
-            <div className="flex items-center gap-2.5">
+            <div className="flex flex-wrap items-center gap-2.5">
               <a
                 href="https://instagram.com/maabrainds"
                 target="_blank"
@@ -93,7 +93,7 @@ export const LinkBio: React.FC<LinkBioProps> = ({ onNavigate }) => {
 
               <button
                 onClick={() => onNavigate('sobre')}
-                className="w-11 h-11 rounded-[3px] border border-line hover:border-sand flex items-center justify-center text-latte hover:text-creamlight hover:bg-[#2C1C14] text-xs font-bold transition-all"
+                className="px-3.5 h-11 rounded-[3px] border border-line hover:border-sand flex items-center justify-center text-latte hover:text-creamlight hover:bg-[#2C1C14] text-xs font-bold tracking-wider whitespace-nowrap transition-all"
                 title="Sobre Núbia"
               >
                 SOBRE
@@ -101,7 +101,7 @@ export const LinkBio: React.FC<LinkBioProps> = ({ onNavigate }) => {
 
               <button
                 onClick={() => onNavigate('home')}
-                className="px-3.5 h-11 rounded-[3px] border border-line hover:border-sand flex items-center justify-center text-latte hover:text-honey text-xs font-semibold tracking-wider transition-all"
+                className="px-3.5 h-11 rounded-[3px] border border-line hover:border-sand flex items-center justify-center text-latte hover:text-honey text-xs font-semibold tracking-wider whitespace-nowrap transition-all"
                 title="Site Completo"
               >
                 PORTFÓLIO ↗
