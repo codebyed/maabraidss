@@ -61,7 +61,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
           <p className="text-[14px] leading-[22px] text-espresso font-medium">
             +55 11 98888-1234<br />
             <a
-              href="https://instagram.com/maabrainds"
+              href="https://instagram.com/maabraidss"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-terracotta transition-colors"

@@ -2,7 +2,7 @@ import React from 'react';
 
 const WHATSAPP_URL =
   'https://wa.me/5511988881234?text=Ol%C3%A1%20N%C3%BAbia!%20Vi%20seu%20site%20e%20gostaria%20de%20falar%20com%20voc%C3%AA.';
-const INSTAGRAM_URL = 'https://instagram.com/maabrainds';
+const INSTAGRAM_URL = 'https://instagram.com/maabraidss';
 
 export const ContatoPage: React.FC = () => {
   return (
@@ -95,7 +95,7 @@ export const ContatoPage: React.FC = () => {
                   rel="noopener noreferrer"
                   className="text-sm font-medium text-espresso hover:text-terracotta transition-colors"
                 >
-                  Instagram: @maabrainds
+                  Instagram: @maabraidss
                 </a>
               </div>
             </div>

@@ -65,7 +65,7 @@ export const LinkBio: React.FC<LinkBioProps> = ({ onNavigate }) => {
             {/* Social Icons */}
             <div className="flex flex-wrap items-center gap-2.5">
               <a
-                href="https://instagram.com/maabrainds"
+                href="https://instagram.com/maabraidss"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-11 h-11 rounded-[3px] border border-line hover:border-sand flex items-center justify-center text-latte hover:text-creamlight hover:bg-[#2C1C14] transition-all"
