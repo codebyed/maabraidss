@@ -106,10 +106,6 @@ export const LinkBio: React.FC<LinkBioProps> = ({ onNavigate }) => {
                 PORTFÓLIO ↗
               </button>
             </div>
-
-            <span className="text-[12px] text-mocha font-medium select-none">
-              link.na.bio/maabrainds
-            </span>
           </div>
         </div>
 
