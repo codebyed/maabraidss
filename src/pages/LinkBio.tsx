@@ -1,11 +1,43 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 interface LinkBioProps {
   onNavigate: (tab: string) => void;
 }
 
+const faqItems = [
+  {
+    q: 'Como faço para agendar?',
+    a: 'O agendamento é feito pela página Agenda ou direto no WhatsApp. Você escolhe o serviço, a data e o horário, e eu confirmo a disponibilidade.',
+  },
+  {
+    q: 'Quanto custa e preciso pagar sinal?',
+    a: 'Os valores variam por técnica e comprimento, a partir de R$ 180. Para reservar o horário, peço um sinal de 30%, que é descontado do valor final.',
+  },
+  {
+    q: 'Quanto tempo dura o atendimento?',
+    a: 'Depende da técnica: box braids levam de 4 a 6 horas; nagô e torcional, de 2 a 3 horas. Reservo o tempo necessário para fazer tudo com calma.',
+  },
+  {
+    q: 'Como devo chegar para o atendimento?',
+    a: 'Venha com o cabelo lavado e seco, sem cremes ou óleos. Se precisar de lavagem no studio, me avise antes para reservar um tempo extra.',
+  },
+  {
+    q: 'Vocês atendem crianças?',
+    a: 'Sim! O serviço infantil é feito com paciência e técnicas mais suaves, a partir de R$ 180.',
+  },
+  {
+    q: 'Como cuidar das tranças em casa?',
+    a: 'Hidratação leve no couro cabeludo, dormir com touca de cetim e evitar produtos pesados. Passo todas as orientações no fim do atendimento.',
+  },
+  {
+    q: 'Onde fica o studio?',
+    a: 'No Maranhão · MA. O endereço completo é enviado na confirmação do agendamento, junto com as instruções de chegada.',
+  },
+];
+
 export const LinkBio: React.FC<LinkBioProps> = ({ onNavigate }) => {
   const currentYear = new Date().getFullYear();
+  const [openFaq, setOpenFaq] = useState<number | null>(0);
 
   return (
     <div className="w-full min-h-screen bg-espresso flex items-center justify-center p-0 md:p-6 lg:p-10 font-sans selection:bg-terracotta selection:text-creamlight">
@@ -126,6 +158,55 @@ export const LinkBio: React.FC<LinkBioProps> = ({ onNavigate }) => {
               TUDO NUM LUGAR SÓ
             </h2>
 
+            {/* Highlights Section */}
+            <div className="flex flex-col gap-3">
+              <div className="w-full flex justify-between items-center">
+                <span className="text-[11px] text-mocha font-bold tracking-[0.14em] uppercase">
+                  DESTAQUES
+                </span>
+                <button
+                  onClick={() => onNavigate('trabalhos')}
+                  className="text-[11px] text-terracotta font-semibold hover:underline"
+                >
+                  ver todos →
+                </button>
+              </div>
+
+              {/* Thumbs Row */}
+              <div className="grid grid-cols-3 gap-3">
+                <div
+                  onClick={() => onNavigate('trabalhos')}
+                  className="h-28 sm:h-36 rounded-[3px] overflow-hidden bg-sand/20 cursor-pointer group"
+                >
+                  <img
+                    src={`${import.meta.env.BASE_URL}images/generated-2.png`}
+                    alt="Destaque Box Braids"
+                    className="w-full h-full object-cover transition-transform group-hover:scale-105"
+                  />
+                </div>
+                <div
+                  onClick={() => onNavigate('trabalhos')}
+                  className="h-28 sm:h-36 rounded-[3px] overflow-hidden bg-sand/20 cursor-pointer group"
+                >
+                  <img
+                    src={`${import.meta.env.BASE_URL}images/generated-7.png`}
+                    alt="Destaque Torcional"
+                    className="w-full h-full object-cover transition-transform group-hover:scale-105"
+                  />
+                </div>
+                <div
+                  onClick={() => onNavigate('trabalhos')}
+                  className="h-28 sm:h-36 rounded-[3px] overflow-hidden bg-sand/20 cursor-pointer group"
+                >
+                  <img
+                    src={`${import.meta.env.BASE_URL}images/generated-4.png`}
+                    alt="Destaque Noivas"
+                    className="w-full h-full object-cover transition-transform group-hover:scale-105"
+                  />
+                </div>
+              </div>
+            </div>
+
             {/* Featured Link 1: Agendar Horário (Big Terracotta Card) */}
             <button
               onClick={() => onNavigate('agenda')}
@@ -240,52 +321,46 @@ export const LinkBio: React.FC<LinkBioProps> = ({ onNavigate }) => {
               </a>
             </div>
 
-            {/* Highlights Section */}
-            <div className="flex flex-col gap-3 pt-2">
-              <div className="w-full flex justify-between items-center">
-                <span className="text-[11px] text-mocha font-bold tracking-[0.14em] uppercase">
-                  DESTAQUES
-                </span>
-                <button
-                  onClick={() => onNavigate('trabalhos')}
-                  className="text-[11px] text-terracotta font-semibold hover:underline"
-                >
-                  ver todos →
-                </button>
-              </div>
-
-              {/* Thumbs Row */}
-              <div className="grid grid-cols-3 gap-3">
-                <div
-                  onClick={() => onNavigate('trabalhos')}
-                  className="h-28 sm:h-36 rounded-[3px] overflow-hidden bg-sand/20 cursor-pointer group"
-                >
-                  <img
-                    src={`${import.meta.env.BASE_URL}images/generated-2.png`}
-                    alt="Destaque Box Braids"
-                    className="w-full h-full object-cover transition-transform group-hover:scale-105"
-                  />
-                </div>
-                <div
-                  onClick={() => onNavigate('trabalhos')}
-                  className="h-28 sm:h-36 rounded-[3px] overflow-hidden bg-sand/20 cursor-pointer group"
-                >
-                  <img
-                    src={`${import.meta.env.BASE_URL}images/generated-7.png`}
-                    alt="Destaque Torcional"
-                    className="w-full h-full object-cover transition-transform group-hover:scale-105"
-                  />
-                </div>
-                <div
-                  onClick={() => onNavigate('trabalhos')}
-                  className="h-28 sm:h-36 rounded-[3px] overflow-hidden bg-sand/20 cursor-pointer group"
-                >
-                  <img
-                    src={`${import.meta.env.BASE_URL}images/generated-4.png`}
-                    alt="Destaque Noivas"
-                    className="w-full h-full object-cover transition-transform group-hover:scale-105"
-                  />
-                </div>
+            {/* FAQ Section */}
+            <div className="flex flex-col gap-3 pt-4 border-t border-[#D9C7B1]">
+              <span className="text-[11px] text-mocha font-bold tracking-[0.14em] uppercase">
+                PERGUNTAS FREQUENTES
+              </span>
+              <div className="flex flex-col">
+                {faqItems.map((item, index) => {
+                  const isOpen = openFaq === index;
+                  return (
+                    <div key={item.q} className="border-b border-[#D9C7B1]">
+                      <button
+                        type="button"
+                        onClick={() => setOpenFaq(isOpen ? null : index)}
+                        aria-expanded={isOpen}
+                        className="w-full py-3.5 flex items-start justify-between gap-4 text-left group"
+                      >
+                        <span className="font-sans font-semibold text-[13px] sm:text-sm text-espresso group-hover:text-terracotta transition-colors">
+                          {item.q}
+                        </span>
+                        <span
+                          className={`text-terracotta text-lg leading-none shrink-0 transition-transform duration-300 ${
+                            isOpen ? 'rotate-45' : ''
+                          }`}
+                          aria-hidden="true"
+                        >
+                          +
+                        </span>
+                      </button>
+                      <div
+                        className={`overflow-hidden transition-all duration-300 ${
+                          isOpen ? 'max-h-60 opacity-100 pb-4' : 'max-h-0 opacity-0'
+                        }`}
+                      >
+                        <p className="text-xs sm:text-[13px] leading-relaxed text-mocha">
+                          {item.a}
+                        </p>
+                      </div>
+                    </div>
+                  );
+                })}
               </div>
             </div>
           </div>
