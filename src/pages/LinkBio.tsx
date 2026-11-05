@@ -302,20 +302,20 @@ export const LinkBio: React.FC<LinkBioProps> = ({ onNavigate }) => {
                 href="https://wa.me/5511988881234?text=Olá Núbia! Vi seu link na bio e gostaria de conversar sobre tranças."
                 target="_blank"
                 rel="noopener noreferrer"
-                className="p-5 bg-espresso hover:bg-[#2C1C14] text-creamlight rounded-[3px] flex items-center gap-4 transition-all hover:scale-[1.01] text-left group shadow-soft"
+                className="p-5 bg-whatsapp hover:bg-[#1EBE5A] text-white rounded-[3px] flex items-center gap-4 transition-all hover:scale-[1.01] text-left group shadow-soft"
               >
-                <div className="w-11 h-11 shrink-0 rounded-[3px] bg-white/10 flex items-center justify-center text-lg">
+                <div className="w-11 h-11 shrink-0 rounded-[3px] bg-white/20 flex items-center justify-center text-lg">
                   💬
                 </div>
                 <div className="flex flex-col gap-0.5 flex-1 min-w-0">
-                  <span className="font-display text-lg sm:text-xl uppercase tracking-tight text-creamlight group-hover:text-honey transition-colors whitespace-nowrap">
+                  <span className="font-display text-lg sm:text-xl uppercase tracking-tight text-white group-hover:text-white transition-colors whitespace-nowrap">
                     WhatsApp Direto
                   </span>
-                  <span className="text-[11px] sm:text-xs text-latte font-medium truncate">
+                  <span className="text-[11px] sm:text-xs text-white/85 font-medium truncate">
                     (11) 98888-1234 · Dúvidas rápidas
                   </span>
                 </div>
-                <span className="hidden sm:inline text-xs text-mocha group-hover:text-whatsapp font-bold transition-colors shrink-0 whitespace-nowrap">
+                <span className="hidden sm:inline text-xs text-white/90 group-hover:text-white font-bold transition-colors shrink-0 whitespace-nowrap">
                   Chamar ↗
                 </span>
               </a>
