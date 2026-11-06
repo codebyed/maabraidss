@@ -351,7 +351,7 @@ export const AgendaPage: React.FC<AgendaPageProps> = ({ onNavigate }) => {
                   <input
                     type="tel"
                     required
-                    placeholder="(11) 98888-8888"
+                    placeholder="(00) 00000-0000"
                     value={clientData.whatsapp}
                     onChange={(e) => setClientData({ ...clientData, whatsapp: e.target.value })}
                     className="p-3.5 bg-white border border-[#D9C7B1] rounded-[3px] text-sm text-espresso outline-none focus:border-terracotta"

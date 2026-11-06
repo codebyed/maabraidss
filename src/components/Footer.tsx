@@ -59,7 +59,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
             CONTATO
           </span>
           <p className="text-[14px] leading-[22px] text-espresso font-medium">
-            +55 11 98888-1234<br />
+            +55 00 00000-0000<br />
             <a
               href="https://instagram.com/maabraidss"
               target="_blank"

@@ -315,7 +315,7 @@ export const LinkBio: React.FC<LinkBioProps> = ({ onNavigate }) => {
                     WhatsApp Direto
                   </span>
                   <span className="text-[11px] sm:text-xs text-white/85 font-medium truncate">
-                    (11) 98888-1234 · Dúvidas rápidas
+                    (00) 00000-0000 · Dúvidas rápidas
                   </span>
                 </div>
                 <span className="hidden sm:inline text-xs text-white/90 group-hover:text-white font-bold transition-colors shrink-0 whitespace-nowrap">

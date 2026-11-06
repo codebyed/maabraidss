@@ -41,7 +41,7 @@ export const ContatoPage: React.FC = () => {
                 Chamar no WhatsApp
               </span>
               <span className="text-sm text-latte font-medium">
-                (11) 98888-1234 · conversa direta com a Núbia
+                (00) 00000-0000 · conversa direta com a Núbia
               </span>
             </div>
 
@@ -86,7 +86,7 @@ export const ContatoPage: React.FC = () => {
                   rel="noopener noreferrer"
                   className="flex items-center gap-2 text-sm font-semibold text-espresso hover:text-terracotta transition-colors"
                 >
-                  WhatsApp: (11) 98888-1234
+                  WhatsApp: (00) 00000-0000
                 </a>
                 <a
                   href={INSTAGRAM_URL}
