@@ -167,7 +167,7 @@ export const LinkBio: React.FC<LinkBioProps> = ({ onNavigate }) => {
               <div className="grid grid-cols-3 gap-3">
                 <div
                   onClick={() => onNavigate('trabalhos')}
-                  className="h-28 sm:h-36 rounded-[3px] overflow-hidden bg-sand/20 cursor-pointer group"
+                  className="h-28 sm:h-36 xl:h-auto xl:aspect-[3/4] rounded-[3px] overflow-hidden bg-sand/20 cursor-pointer group"
                 >
                   <img
                     src={`${import.meta.env.BASE_URL}images/generated-2.png`}
@@ -177,7 +177,7 @@ export const LinkBio: React.FC<LinkBioProps> = ({ onNavigate }) => {
                 </div>
                 <div
                   onClick={() => onNavigate('trabalhos')}
-                  className="h-28 sm:h-36 rounded-[3px] overflow-hidden bg-sand/20 cursor-pointer group"
+                  className="h-28 sm:h-36 xl:h-auto xl:aspect-[3/4] rounded-[3px] overflow-hidden bg-sand/20 cursor-pointer group"
                 >
                   <img
                     src={`${import.meta.env.BASE_URL}images/generated-7.png`}
@@ -187,7 +187,7 @@ export const LinkBio: React.FC<LinkBioProps> = ({ onNavigate }) => {
                 </div>
                 <div
                   onClick={() => onNavigate('trabalhos')}
-                  className="h-28 sm:h-36 rounded-[3px] overflow-hidden bg-sand/20 cursor-pointer group"
+                  className="h-28 sm:h-36 xl:h-auto xl:aspect-[3/4] rounded-[3px] overflow-hidden bg-sand/20 cursor-pointer group"
                 >
                   <img
                     src={`${import.meta.env.BASE_URL}images/generated-4.png`}
