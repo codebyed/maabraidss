@@ -86,7 +86,6 @@ export const ContatoPage: React.FC = () => {
                   rel="noopener noreferrer"
                   className="flex items-center gap-2 text-sm font-semibold text-espresso hover:text-terracotta transition-colors"
                 >
-                  <span className="w-2.5 h-2.5 rounded-full bg-whatsapp"></span>
                   WhatsApp: (11) 98888-1234
                 </a>
                 <a
