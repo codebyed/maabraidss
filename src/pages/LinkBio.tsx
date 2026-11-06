@@ -116,7 +116,7 @@ export const LinkBio: React.FC<LinkBioProps> = ({ onNavigate }) => {
               </a>
 
               <a
-                href="https://wa.me/5511988881234"
+                href="https://wa.me/5500000000000"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-11 h-11 rounded-[3px] border border-line hover:border-sand flex items-center justify-center text-latte hover:text-whatsapp hover:bg-[#2C1C14] transition-all"
@@ -302,7 +302,7 @@ export const LinkBio: React.FC<LinkBioProps> = ({ onNavigate }) => {
 
               {/* Card 4: WhatsApp Direto */}
               <a
-                href="https://wa.me/5511988881234?text=Olá Núbia! Vi seu link na bio e gostaria de conversar sobre tranças."
+                href="https://wa.me/5500000000000?text=Olá Núbia! Vi seu link na bio e gostaria de conversar sobre tranças."
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-5 bg-whatsapp hover:bg-[#1EBE5A] text-white rounded-[3px] flex items-center gap-4 transition-all hover:scale-[1.01] text-left group shadow-soft"

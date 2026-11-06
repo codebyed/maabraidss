@@ -196,7 +196,7 @@ export const AgendaPage: React.FC<AgendaPageProps> = ({ onNavigate }) => {
           <div className="pt-6 border-t border-line text-[11px] text-mocha">
             Dúvidas no agendamento?<br />
             <a
-              href="https://wa.me/5511988881234"
+              href="https://wa.me/5500000000000"
               target="_blank"
               rel="noopener noreferrer"
               className="text-honey hover:underline font-semibold"
@@ -479,7 +479,7 @@ export const AgendaPage: React.FC<AgendaPageProps> = ({ onNavigate }) => {
 
               <div className="flex flex-col sm:flex-row gap-4 w-full max-w-md">
                 <a
-                  href={`https://wa.me/5511988881234?text=${encodeURIComponent(
+                  href={`https://wa.me/5500000000000?text=${encodeURIComponent(
                     `Olá Núbia! Realizei o agendamento de *${selectedService.name}* para *${selectedDate} às ${selectedTime}*. Meu nome é ${clientData.nome}. Segue o comprovante do sinal de R$ ${sinalAmount}.`
                   )}`}
                   target="_blank"
