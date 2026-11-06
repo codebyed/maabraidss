@@ -4,7 +4,15 @@ import autoprefixer from 'autoprefixer'
 import { defineConfig } from 'vite'
 
 export default defineConfig({
-  base: '/maabraidss/',
+  base: '/',
+  server: {
+    port: 80,
+    strictPort: true,
+  },
+  preview: {
+    port: 80,
+    strictPort: true,
+  },
   plugins: [react()],
   css: {
     postcss: {
