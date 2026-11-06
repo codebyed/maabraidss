@@ -1,4 +1,13 @@
 import React, { useState } from 'react';
+import {
+  CalendarIcon,
+  CheckIcon,
+  InstagramIcon,
+  MapPinIcon,
+  ScissorsIcon,
+  SparklesIcon,
+  WhatsAppIcon,
+} from '../components/Icons';
 
 interface LinkBioProps {
   onNavigate: (tab: string) => void;
@@ -68,8 +77,8 @@ export const LinkBio: React.FC<LinkBioProps> = ({ onNavigate }) => {
                     (e.currentTarget as HTMLImageElement).src = `${import.meta.env.BASE_URL}images/generated-1.png`;
                   }}
                 />
-                <div className="absolute -bottom-1 -right-1 w-8 h-8 bg-terracotta rounded-full flex items-center justify-center text-creamlight text-sm font-bold shadow-soft">
-                  ✓
+                <div className="absolute -bottom-1 -right-1 w-8 h-8 bg-terracotta rounded-full flex items-center justify-center text-creamlight shadow-soft">
+                  <CheckIcon className="w-4 h-4" />
                 </div>
               </div>
 
@@ -103,11 +112,7 @@ export const LinkBio: React.FC<LinkBioProps> = ({ onNavigate }) => {
                 className="w-11 h-11 rounded-[3px] border border-line hover:border-sand flex items-center justify-center text-latte hover:text-creamlight hover:bg-[#2C1C14] transition-all"
                 title="Instagram"
               >
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="w-4 h-4">
-                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
-                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
-                  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
-                </svg>
+                <InstagramIcon className="w-4 h-4" />
               </a>
 
               <a
@@ -117,9 +122,7 @@ export const LinkBio: React.FC<LinkBioProps> = ({ onNavigate }) => {
                 className="w-11 h-11 rounded-[3px] border border-line hover:border-sand flex items-center justify-center text-latte hover:text-whatsapp hover:bg-[#2C1C14] transition-all"
                 title="WhatsApp"
               >
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="w-4 h-4">
-                  <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
-                </svg>
+                <WhatsAppIcon className="w-4 h-4" />
               </a>
 
               <button
@@ -213,9 +216,9 @@ export const LinkBio: React.FC<LinkBioProps> = ({ onNavigate }) => {
               className="w-full p-5 sm:p-6 bg-terracotta hover:bg-[#c25830] text-creamlight rounded-[3px] flex items-center justify-between gap-4 transition-all hover:scale-[1.008] shadow-medium group text-left"
             >
               <div className="flex items-center gap-4 flex-1 min-w-0">
-                <div className="w-11 h-11 rounded-[3px] bg-white/10 flex items-center justify-center text-xl shrink-0">
-                  📅
-                </div>
+                <span className="flex h-7 w-7 shrink-0 items-center justify-center text-creamlight">
+                  <CalendarIcon className="h-7 w-7" />
+                </span>
                 <div className="flex flex-col gap-0.5 min-w-0">
                   <span className="text-lg sm:text-xl font-bold font-sans tracking-wide whitespace-nowrap">
                     Agendar horário
@@ -237,9 +240,9 @@ export const LinkBio: React.FC<LinkBioProps> = ({ onNavigate }) => {
                 onClick={() => onNavigate('servicos')}
                 className="p-5 bg-espresso hover:bg-[#2C1C14] text-creamlight rounded-[3px] flex items-center gap-4 transition-all hover:scale-[1.01] text-left group shadow-soft"
               >
-                <div className="w-11 h-11 shrink-0 rounded-[3px] bg-white/10 flex items-center justify-center text-lg">
-                  ✂️
-                </div>
+                <span className="flex h-7 w-7 shrink-0 items-center justify-center text-honey">
+                  <ScissorsIcon className="h-6 w-6" />
+                </span>
                 <div className="flex flex-col gap-0.5 flex-1 min-w-0">
                   <span className="font-display text-lg sm:text-xl uppercase tracking-tight text-creamlight group-hover:text-honey transition-colors whitespace-nowrap">
                     Serviços &amp; Valores
@@ -258,9 +261,9 @@ export const LinkBio: React.FC<LinkBioProps> = ({ onNavigate }) => {
                 onClick={() => onNavigate('trabalhos')}
                 className="p-5 bg-espresso hover:bg-[#2C1C14] text-creamlight rounded-[3px] flex items-center gap-4 transition-all hover:scale-[1.01] text-left group shadow-soft"
               >
-                <div className="w-11 h-11 shrink-0 rounded-[3px] bg-white/10 flex items-center justify-center text-lg">
-                  ✨
-                </div>
+                <span className="flex h-7 w-7 shrink-0 items-center justify-center text-honey">
+                  <SparklesIcon className="h-6 w-6" />
+                </span>
                 <div className="flex flex-col gap-0.5 flex-1 min-w-0">
                   <span className="font-display text-lg sm:text-xl uppercase tracking-tight text-creamlight group-hover:text-honey transition-colors whitespace-nowrap">
                     Trabalhos &amp; Galeria
@@ -281,9 +284,9 @@ export const LinkBio: React.FC<LinkBioProps> = ({ onNavigate }) => {
                 rel="noopener noreferrer"
                 className="p-5 bg-espresso hover:bg-[#2C1C14] text-creamlight rounded-[3px] flex items-center gap-4 transition-all hover:scale-[1.01] text-left group shadow-soft"
               >
-                <div className="w-11 h-11 shrink-0 rounded-[3px] bg-white/10 flex items-center justify-center text-lg">
-                  📍
-                </div>
+                <span className="flex h-7 w-7 shrink-0 items-center justify-center text-honey">
+                  <MapPinIcon className="h-6 w-6" />
+                </span>
                 <div className="flex flex-col gap-0.5 flex-1 min-w-0">
                   <span className="font-display text-lg sm:text-xl uppercase tracking-tight text-creamlight group-hover:text-honey transition-colors whitespace-nowrap">
                     Como Chegar
@@ -304,9 +307,9 @@ export const LinkBio: React.FC<LinkBioProps> = ({ onNavigate }) => {
                 rel="noopener noreferrer"
                 className="p-5 bg-whatsapp hover:bg-[#1EBE5A] text-white rounded-[3px] flex items-center gap-4 transition-all hover:scale-[1.01] text-left group shadow-soft"
               >
-                <div className="w-11 h-11 shrink-0 rounded-[3px] bg-white/20 flex items-center justify-center text-lg">
-                  💬
-                </div>
+                <span className="flex h-7 w-7 shrink-0 items-center justify-center text-white">
+                  <WhatsAppIcon className="h-6 w-6" />
+                </span>
                 <div className="flex flex-col gap-0.5 flex-1 min-w-0">
                   <span className="font-display text-lg sm:text-xl uppercase tracking-tight text-white group-hover:text-white transition-colors whitespace-nowrap">
                     WhatsApp Direto
